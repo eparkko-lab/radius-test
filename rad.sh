@@ -1,0 +1,7 @@
+#!/bin/bash
+
+SHARED_SECRET=$1
+USER_NAME=$2
+CODE=$3
+
+radtest "$USER_NAME" "$CODE" 10.0.0.8 0 "$SHARED_SECRET"
